@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.petshop.petshop.controller.ListOfAnimalsController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="285.0" layoutY="85.0" prefHeight="436.0" prefWidth="510.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnCat" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Cat" />
+            <Button fx:id="btnDog" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Dog" GridPane.columnIndex="1" />
+            <Button fx:id="btnRabbit" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Rabbit" GridPane.columnIndex="2" />
+            <Button fx:id="btnBird" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Bird" GridPane.rowIndex="1" />
+            <Button fx:id="btnHorse" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Horse" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btnChicken" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Chicken" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btnTiger" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Tiger" GridPane.rowIndex="2" />
+            <Button fx:id="btnMonkey" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Monkey" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnSheep" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Sheep" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button layoutX="454.0" layoutY="579.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="172.0" text="Keluar" />
+   </children>
+</AnchorPane>
